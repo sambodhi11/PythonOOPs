@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 class Shape(ABC):
-    def print(self,x):
+    def check(self,x):
         print("Shape: ", x)
     @abstractmethod
     def task(self):
@@ -16,10 +16,10 @@ class Rectangle(Shape):
         
 Squ = Square()
 Squ.task()
-Squ.print(100)
+Squ.check(100)
 Rect = Rectangle()
 Rect.task()
-Rect.print(200)
+Rect.check(200)
  
 print("Instance:", isinstance(Squ, Shape))
 print("Instance:", isinstance(Rect, Shape))
